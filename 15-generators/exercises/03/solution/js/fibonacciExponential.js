@@ -11,9 +11,16 @@ function* fibonacci() {
 
 const fibonacciIterator = fibonacci();
 
+/* // already done
 const fibonacciExponential = () => {
   const { value } = fibonacciIterator.next();
   return value * value;
+};
+*/
+
+const fibonacciExponential = () => {
+  const { value } = fibonacciIterator.next();
+  return value ** 2;
 };
 
 export default fibonacciExponential;
